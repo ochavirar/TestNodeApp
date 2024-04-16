@@ -9,5 +9,5 @@ jobs:
       - run: apt-get update
       - run: apt-get upgrade
       - run: apt-get install git
-      - run: git
+      - run: cat /etc/os-release
       - uses: actions/checkout@v3
