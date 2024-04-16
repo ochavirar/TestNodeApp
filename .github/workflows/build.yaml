@@ -6,5 +6,4 @@ jobs:
       image: debian
     steps:
       - run: echo 'Hola desde Debian'
-      - uses: actions/checkout@v4
-      - run: node app.js
+      - uses: actions/checkout@v3
