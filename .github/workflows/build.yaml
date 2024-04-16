@@ -1,6 +1,6 @@
 on: push
 jobs:
-  build-node:
+  build-debian:
     runs-on: ubuntu-latest
     container:
       image: debian
