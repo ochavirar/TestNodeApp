@@ -6,5 +6,8 @@ jobs:
       image: debian
     steps:
       - run: echo 'Hola desde Debian'
-      - run: lsb_release -d
+      - run: apt-get update
+      - run: apt-get upgrade
+      - run: apt-get install git
+      - run: git
       - uses: actions/checkout@v3
