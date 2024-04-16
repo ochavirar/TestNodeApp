@@ -2,9 +2,11 @@ on: push
 jobs:
   build-node:
     runs-on: ubuntu-latest
-    container: node:16
+    container:
+      image: debian
     steps:
-      - run: node --version
-      - run: npm --version
+      - run: sudo apt update
+      - run: sudo apt upgrade
+      - run: echo 'Hola desde Debian'
       - uses: actions/checkout@v4
       - run: node app.js
