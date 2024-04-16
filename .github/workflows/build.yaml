@@ -6,5 +6,5 @@ jobs:
       image: debian
     steps:
       - run: echo 'Hola desde Debian'
-      - run: hostnamectl
+      - run: lsb_release -d
       - uses: actions/checkout@v3
